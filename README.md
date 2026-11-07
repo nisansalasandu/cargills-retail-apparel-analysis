@@ -2,7 +2,6 @@
 
 An end-to-end retail analytics project: clean and validate six months of multi-store apparel data in Python, answer 10 business questions with KPIs and statistical tests, and present the results through a Power BI dashboard, a slide deck and an executive brief.
 
-![Dashboard overview](images/image01.png)
 
 ## Table of Contents
 
@@ -82,7 +81,6 @@ flowchart LR
     D --> H[Executive brief]
 ```
 
-![Project architecture and workflow](images/image02.png)
 
 The notebook handles everything up to the exported summary tables. Power BI imports those pre-built KPI tables, so the dashboard stays light and the calculations stay reproducible in code.
 
@@ -109,9 +107,15 @@ The notebook handles everything up to the exported summary tables. Power BI impo
 
 **4. Communicate.** Build a Power BI dashboard with tailored views for each audience, a slide deck for the full story, and a one-page executive brief for the single biggest decision.
 
-![Store performance](images/image03.png)
+![Store Manager Overview](images/image01.png)
 
-![Promotion analysis](images/image04.png)
+![Promo View](images/image02.png)
+
+![Strategic View](images/image03.png)
+
+![SKU Action](images/image04.png)
+
+![Loyalty](images/image05.png)
 
 ## Key Findings
 
@@ -124,9 +128,7 @@ The notebook handles everything up to the exported summary tables. Power BI impo
 - **Inventory is misaligned:** Elmwood Gate carries 5.7–7.0 months of supply on nearly every SKU, while Polo Shirt, Slim Jeans and Flannel Shirt run under 2.2 months at Harbor Point, Magnolia Commons and Peachtree Corners.
 - **Regional efficiency:** the South earns the most revenue per sq ft and the West the least. Managers run at roughly equal margin (~56%), so gaps come from operating efficiency rather than product mix.
 
-![Inventory and regional analysis](images/image05.png)
 
-![Customer and loyalty insights](images/image06.png)
 
 ## Conclusion
 
@@ -153,16 +155,12 @@ The data shows a business that is broadly healthy, with a clear, evidence-backed
 
 ```
 .
-├── notebooks/
-│   └── 01_cleaning_and_kpi_analysis.ipynb      # Data cleaning and KPI analysis (Q1-Q10)
-├── dashboard/
-│   └── retail_apparel_dashboard.pbix           # Power BI dashboard
-├── reports/
-│   ├── retail_apparel_performance_review.pdf          # Slide deck
-│   └── executive_brief_spring_outerwear_promo.pdf     # Executive brief
-├── data/                                       # Raw data goes here (not committed)
-├── images/                                     # README images (image01.png ... image06.png)
-├── requirements.txt
+├── 01_cleaning_and_kpi_analysis.ipynb      # Data cleaning and KPI analysis (Q1-Q10)
+├── retail_apparel_dashboard.pbix           # Power BI dashboard
+├── retail_apparel_performance_review.pdf          # Slide deck   
+├── executive_brief_spring_outerwear_promo.pdf     # Executive brief
+├── images/                                     # README images (image01.png ... image05.png)
+├── Retail_Apparel_Data_v1.xlsx
 ├── LICENSE
 └── README.md
 ```
